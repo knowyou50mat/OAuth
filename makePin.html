@@ -338,7 +338,7 @@
 
         async function submitRegistration() {
             const container = document.getElementById('form-container');
-            const name = document.getElementById('user-name').value.trim();
+            const name = document.getElementById('user-name').value.trim().replace(/^["']|["']$/g, "");
             const pin = document.getElementById('user-pin').value.trim();
             const email = document.getElementById('user-email').value.trim();
 
